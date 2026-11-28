@@ -21,7 +21,6 @@
         <img class="bg-img" src="assets/bg_shop_counter.png" alt="Shop counter">
         <img id="cust-human" class="sprite hidden" src="assets/char_customer_human.png" alt="Customer">
         <img id="desk-tape" class="sprite hidden" src="assets/prop_vhs_tape.png" alt="VHS tape">
-        <img id="cust-monster" class="sprite hidden" src="assets/char_customer_monster.png" alt="Monster">
 
         <div id="shift-note" class="hidden">
           <h3>NIGHT SHIFT NOTES</h3>
@@ -42,10 +41,8 @@
       <section id="sc-bench" class="scene">
         <img class="bg-img" src="assets/bg_workbench_zoom.png" alt="Workbench">
         <canvas id="bench-cv" width="960" height="540"></canvas>
-        <img id="mosq" class="sprite hidden" src="assets/prop_mosquito.png" alt="Mosquito">
 
         <div id="bench-hdr">STEP 1/3: UNSCREW CASING (0/4)</div>
-        <div id="mosq-warn" class="hidden"></div>
 
         <div id="ribbon-box" class="hidden">
           <div class="rib-lbl">STEP 3/3: HOLD ALIGN IN GREEN ZONE</div>
@@ -59,78 +56,6 @@
 
         <div id="bench-done" class="btn-row hidden">
           <button id="btn-vcr" class="vhs-btn">[ INSERT INTO VCR ]</button>
-        </div>
-
-        <div id="swarm-layer" class="hidden"></div>
-        <div id="red-vignette" class="hidden"></div>
-        <div id="mosq-gameover" class="hidden">
-          <h2>GAME OVER</h2>
-          <p>THE SWARM FOUND YOU. YOU DIDN'T STAY STILL.</p>
-          <button id="btn-try-again" class="vhs-btn">[ TRY AGAIN ]</button>
-        </div>
-      </section>
-
-      <section id="sc-crt" class="scene">
-        <div id="crt-slot">
-          <img id="crt-clip" src="assets/vhs_clip1_hallway.png" alt="VHS clip">
-          <div id="crt-noise"></div>
-          <div id="crt-tag">PLAY &#9654;</div>
-          <div class="crt-lines"></div>
-        </div>
-        <img class="bg-img crt-frame" src="assets/bg_crt_screen_frame.png" alt="CRT frame">
-
-        <div id="trk-box" class="hidden">
-          <span id="trk-lbl">TRACKING LOST &mdash; TUNE SIGNAL</span>
-          <input id="trk-slider" type="range" min="0" max="100" value="10">
-        </div>
-
-        <div id="crt-box" class="dlg-box">
-          <p id="crt-cap"></p>
-          <div id="crt-btns" class="btn-row"></div>
-        </div>
-      </section>
-
-      <section id="sc-nosig" class="scene">
-        <img class="bg-img" src="assets/ending_no_signal.png" alt="No signal">
-        <div id="nosig-txt">NO SIGNAL &mdash; PART 1 END</div>
-      </section>
-
-      <section id="sc-credits" class="scene">
-        <div id="cred-roll">
-          <h1>THé VhS</h1>
-          <p class="sub">PART 1</p>
-
-          <div class="cred-blk">
-            <p class="role" id="end-lbl">ENDING</p>
-            <p id="end-note"></p>
-          </div>
-
-          <div class="cred-blk">
-            <p class="role">GAME MADE BY</p>
-            <p>PhantomForehead</p>
-          </div>
-
-          <div class="cred-blk">
-            <p class="role">CAST</p>
-            <p>THE CUSTOMER</p>
-            <p>THE TAPE PARASITE</p>
-            <p>YOU</p>
-          </div>
-
-          <div class="cred-blk">
-            <p class="role">SHIFT LOG</p>
-            <p>11:00 PM &mdash; SHIFT START</p>
-            <p>11:15 PM &mdash; FRONT DOOR</p>
-            <p>12:00 AM &mdash; WORKBENCH</p>
-            <p>01:30 AM &mdash; PLAYBACK</p>
-            <p>03:30 AM &mdash; SIGNAL LOST</p>
-          </div>
-
-          <p class="tbc">TO BE CONTINUED IN PART 2...</p>
-        </div>
-
-        <div id="cred-foot">
-          <button id="btn-replay" class="vhs-btn">[ PLAY AGAIN ]</button>
         </div>
       </section>
 
